@@ -1,0 +1,27 @@
+{
+  "name": "string_format",
+  "version": "0.0.0",
+  "description": "Format string template",
+  "main": "dist/index.js",
+  "scripts": {
+    "build_development": "tsc --build tsconfig.json",
+    "build_production": "tsc --build tsconfig.dist.json",
+    "build": "npm run build_development & npm run build_production",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.fireant.com:libs/string_format.git"
+  },
+  "keywords": [
+    "string",
+    "format",
+    "template"
+  ],
+  "author": "luoyujiang",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {}
+}
