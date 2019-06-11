@@ -1,6 +1,6 @@
 {
   "name": "string_format",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Format string template",
   "main": "dist/index.js",
   "scripts": {
