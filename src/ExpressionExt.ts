@@ -6,7 +6,7 @@ export class ExpressionExt implements IFormatExt {
     private TOKEN_MUL = "*";
     private TOKEN_DIV = "/";
 
-    private _operatorTokens: String[];
+    private _operatorTokens: string[];
     private _operateFuns: ((num1: number, num2: number) => number)[];
     public constructor() {
         var tokenNum = 4;

@@ -29,7 +29,7 @@ export class StringFormat {
         }
     }
 
-    public format(targetStr: String): String {
+    public format(targetStr: string): string {
         var valueMap = this._formatValueMap;
         var exts = this._formatExs;
         var extsLen = exts.length;
@@ -95,7 +95,7 @@ export class StringFormat {
     public get expressionExt(): ExpressionExt { return this._expressionExt; }
     public get numberFixedExt(): NumberFixedExt { return this._numberFixedExt; }
 
-    private _findReplaceStrWithPercentSign(targetStr: String, results: string[] = null): string[] {
+    private _findReplaceStrWithPercentSign(targetStr: string, results: string[] = null): string[] {
         if (results == null) results = [];
         results.length = 0;
         var length = targetStr ? targetStr.length : 0;
@@ -105,7 +105,7 @@ export class StringFormat {
         var percentSign = "%";
         var percentSignIndex = 0;
         for (i = 0; i < length; ++i) {
-            var char: String = targetStr.charAt(i);
+            var char: string = targetStr.charAt(i);
             if (char == percentSign) {
                 if (i != 0 && targetStr.charAt(i - 1) == "\\") {
                     continue;

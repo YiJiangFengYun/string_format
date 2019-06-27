@@ -11,7 +11,7 @@ export declare class StringFormat {
     private _numberFixedExt;
     constructor();
     setFormatValues(values: TypeValueMap): void;
-    format(targetStr: String): String;
+    format(targetStr: string): string;
     addExt(ext: IFormatExt): void;
     removeExt(ext: IFormatExt): void;
     readonly expressionExt: ExpressionExt;
